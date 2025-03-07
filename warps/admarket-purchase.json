@@ -1,0 +1,26 @@
+{
+  "protocol": "warp:0.4.0",
+  "name": "AdMarket Purchase",
+  "title": "Purchase AdSpace on AdMarket",
+  "description": "Purchase AdSpace on the AdMarket contract.",
+  "actions": [
+    {
+      "type": "contract",
+      "label": "Purchase now",
+      "address": "erd1qqqqqqqqqqqqqpgqtq9yve5mw7d9hjskxlvhz5znc7plvpq7ss8srlcf7g",
+      "func": "purchaseAdSpace",
+      "args": [],
+      "gasLimit": 20000000,
+      "inputs": [
+        {
+          "name": "Value to spend",
+          "type": "biguint",
+          "position": "value",
+          "source": "field",
+          "required": true,
+          "modifier": "scale:18"
+        }
+      ]
+    }
+  ]
+}
