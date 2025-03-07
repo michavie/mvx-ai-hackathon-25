@@ -1,0 +1,4 @@
+[settings]
+
+[[proxy]]
+path = "../manager/src/entity_proxy.rs"

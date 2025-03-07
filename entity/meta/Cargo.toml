@@ -1,0 +1,12 @@
+[package]
+name = "entity-meta"
+version = "1.0.0"
+authors = ["Micha Vie <micha@peerme.io>", "PeerMe <hello@peerme.io>"]
+edition = "2018"
+publish = false
+
+[dependencies.entity]
+path = ".."
+
+[dependencies.multiversx-sc-meta]
+version = "0.50.3"
