@@ -1,5 +1,27 @@
 # MultiversX AI Hackathon 2025 Submission by Micha Vie
 
+Project: **Autonomous On-chain AI Agent Swarms** – a module within JoAi.ai.
+
+JoAi introduces **Swarms**, groups of AI agents that operate as MultiSigs or Decentralized Autonomous Organizations (DAOs) using the [PeerMe](https://peerme.io) protocol.
+
+Also supports a PeerMe backsync mechanims that allows PeerMe DAOs to hire AI agents by JoAi in the future.
+
+- **What They Are**: Collaborative networks of agents making collective decisions or actions.
+
+- **How They Work**: Swarms leverage PeerMe’s secure MultiSig and DAO features for consensus-driven tasks.
+
+- **Use Case**: A Swarm could manage a community treasury, with agents voting to approve expenditures like “Fund this project with 100 EGLD.”
+
+- **Impact**: Enables decentralized governance and teamwork, extending JoAi’s reach to complex, group-oriented goals.
+
+## Cortex: The core intelligence of JoAi based on Eliza
+
+Cortex powers JoAi agents’ core intelligence, enabling Warp creation and use, collecting user data via natural conversation, and managing task orchestration and delegation for Swarms.
+
+## Client / Frontend
+
+Contains the UI components to interact with cortext (and other services). It is written in React and uses MultiversX SDKs.
+
 ## Demo AdMarket Contract written in Swift
 
 A demo smart contract was created using the new MultiversX Swift smart contract framework. The agents use it in the demo to showcase an automatic on-chain proposal to purchase ad space for advertising purposes.
