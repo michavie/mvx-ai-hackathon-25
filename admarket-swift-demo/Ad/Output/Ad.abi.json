@@ -1,0 +1,408 @@
+{
+  "buildInfo" : {
+    "framework" : {
+      "name" : "SpaceKit",
+      "version" : "0.2.2"
+    }
+  },
+  "name" : "Ad",
+  "constructor" : {
+    "inputs" : [
+
+    ],
+    "outputs" : [
+
+    ]
+  },
+  "endpoints" : [
+    {
+      "name" : "issue",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenDisplayName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenTicker",
+          "type" : "bytes"
+        },
+        {
+          "name" : "initialSupply",
+          "type" : "BigUint"
+        },
+        {
+          "name" : "numDecimals",
+          "type" : "u32"
+        },
+        {
+          "name" : "tokenProperties",
+          "type" : "variadic<bytes>",
+          "multi_arg" : true
+        }
+      ],
+      "outputs" : [
+        {
+          "type" : "optional<bytes>",
+          "multi_result" : true
+        }
+      ]
+    },
+    {
+      "name" : "issueNonFungible",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenDisplayName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenTicker",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenProperties",
+          "type" : "variadic<bytes>",
+          "multi_arg" : true
+        }
+      ],
+      "outputs" : [
+        {
+          "type" : "bytes"
+        }
+      ]
+    },
+    {
+      "name" : "issueSemiFungible",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenDisplayName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenTicker",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenProperties",
+          "type" : "variadic<bytes>",
+          "multi_arg" : true
+        }
+      ],
+      "outputs" : [
+        {
+          "type" : "bytes"
+        }
+      ]
+    },
+    {
+      "name" : "registerMetaESDT",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenDisplayName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenTicker",
+          "type" : "bytes"
+        },
+        {
+          "name" : "numDecimals",
+          "type" : "u32"
+        },
+        {
+          "name" : "tokenProperties",
+          "type" : "variadic<bytes>",
+          "multi_arg" : true
+        }
+      ],
+      "outputs" : [
+        {
+          "type" : "bytes"
+        }
+      ]
+    },
+    {
+      "name" : "registerAndSetAllRoles",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenDisplayName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenTicker",
+          "type" : "bytes"
+        },
+        {
+          "name" : "tokenTypeName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "numDecimals",
+          "type" : "u32"
+        }
+      ],
+      "outputs" : [
+        {
+          "type" : "bytes"
+        }
+      ]
+    },
+    {
+      "name" : "ESDTLocalMint",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "amount",
+          "type" : "BigUint"
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "ESDTLocalBurn",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "amount",
+          "type" : "BigUint"
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "ESDTNFTBurn",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "nonce",
+          "type" : "u64"
+        },
+        {
+          "name" : "amount",
+          "type" : "BigUint"
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "ESDTNFTCreate",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "initialQuantity",
+          "type" : "BigUint"
+        },
+        {
+          "name" : "nftName",
+          "type" : "bytes"
+        },
+        {
+          "name" : "royalties",
+          "type" : "BigUint"
+        },
+        {
+          "name" : "hash",
+          "type" : "bytes"
+        },
+        {
+          "name" : "attributes",
+          "type" : "bytes"
+        },
+        {
+          "name" : "uris",
+          "type" : "variadic<bytes>",
+          "multi_arg" : true
+        }
+      ],
+      "outputs" : [
+        {
+          "type" : "u64"
+        }
+      ]
+    },
+    {
+      "name" : "ESDTNFTAddQuantity",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "nonce",
+          "type" : "u64"
+        },
+        {
+          "name" : "amount",
+          "type" : "BigUint"
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "setSpecialRole",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "address",
+          "type" : "Address"
+        },
+        {
+          "name" : "roles",
+          "type" : "variadic<bytes>",
+          "multi_arg" : true
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "ESDTNFTUpdateAttributes",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "nonce",
+          "type" : "u64"
+        },
+        {
+          "name" : "attributes",
+          "type" : "bytes"
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "ESDTModifyRoyalties",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+        {
+          "name" : "tokenIdentifier",
+          "type" : "bytes"
+        },
+        {
+          "name" : "nonce",
+          "type" : "u64"
+        },
+        {
+          "name" : "royalties",
+          "type" : "u64"
+        }
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "purchaseAdSpace",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+
+      ],
+      "outputs" : [
+
+      ]
+    },
+    {
+      "name" : "getConversionRate",
+      "mutability" : "mutable",
+      "payableInTokens" : [
+        "*"
+      ],
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "type" : "BigUint"
+        }
+      ]
+    }
+  ],
+  "events" : [
+
+  ],
+  "types" : {
+
+  }
+}
