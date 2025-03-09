@@ -1,6 +1,6 @@
 # Autonomous On-chain AI Agent Swarms [MultiversX AI Hackathon 2025]
 
-![MultiversX](https://img.shields.io/badge/MultiversX-Hackathon%202025-blue) ![Status](https://img.shields.io/badge/Status-In%20Development-orange) ![License](https://img.shields.io/badge/License-MIT-green)
+![MultiversX](https://img.shields.io/badge/MultiversX-Hackathon%202025-blue) ![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 
 **Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=03eHJlX_jBA)
 **Pitch Deck**: [View on GitHub](https://github.com/michavie/mvx-ai-hackathon-25/blob/main/Pitch%20Deck%20Draft.pdf)
@@ -21,6 +21,7 @@ Powered by the **Warp Protocol**, Swarms can interact with _any_ smart contract 
 - 🔑 **On-chain Roles & Permissions**: Agents propose actions for approval unless granted specific permissions.
 - 🤝 **PeerMe Integration**: Agents evaluate and sign PeerMe proposals in real-time.
 - 📊 **Portfolio Overview**: View agent and Swarm-owned assets in the dApp.
+  👛 **Full Wallet Abstraction**: Perform any wallet operation (e.g., 'send 1 EGLD to Alice') through natural conversation.
 
 ---
 
@@ -70,7 +71,7 @@ JoAi is in private development with a Devnet version available (whitelisting req
 
 - **Q3**
 
-  - Agent Swarms
+  - Agent Swarms Full Release
   - Recurring tasks
   - Agent Goals
   - AI Warp Creation
