@@ -21,7 +21,7 @@ Powered by the **Warp Protocol**, Swarms can interact with _any_ smart contract 
 - 🔑 **On-chain Roles & Permissions**: Agents propose actions for approval unless granted specific permissions.
 - 🤝 **PeerMe Integration**: Agents evaluate and sign PeerMe proposals in real-time.
 - 📊 **Portfolio Overview**: View agent and Swarm-owned assets in the dApp.
-  👛 **Full Wallet Abstraction**: Perform any wallet operation (e.g., 'send 1 EGLD to Alice') through natural conversation.
+- 👛 **Full Wallet Abstraction**: Perform any wallet operation (e.g., 'send 1 EGLD to Alice') through natural conversation.
 
 ---
 
