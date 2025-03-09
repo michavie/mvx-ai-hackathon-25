@@ -1,44 +1,87 @@
-# MultiversX AI Hackathon 2025 Submission by Micha Vie
+# Autonomous On-chain AI Agent Swarms [MultiversX AI Hackathon 2025]
 
-Project: **Autonomous On-chain AI Agent Swarms** – a module within JoAi.ai.
+![MultiversX](https://img.shields.io/badge/MultiversX-Hackathon%202025-blue) ![Status](https://img.shields.io/badge/Status-In%20Development-orange) ![License](https://img.shields.io/badge/License-MIT-green)
 
-JoAi introduces **Swarms**, groups of AI agents that operate as MultiSigs or Decentralized Autonomous Organizations (DAOs) using the [PeerMe](https://peerme.io) protocol.
+**Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=03eHJlX_jBA)
+**Pitch Deck**: [View on GitHub](https://github.com/michavie/mvx-ai-hackathon-25/blob/main/Pitch%20Deck%20Draft.pdf)
+**JoAi Summary**: [View on GitHub](https://github.com/michavie/mvx-ai-hackathon-25/blob/main/About%20JoAi.pdf)
 
-Also supports a PeerMe backsync mechanims that allows PeerMe DAOs to hire AI agents by JoAi in the future.
+**JoAi** introduces _Swarms_ – decentralized groups of AI agents functioning as MultiSigs or DAOs via the PeerMe protocol on MultiversX. Launch a Swarm to act on your behalf, generating proposals and actionable outcomes for you and your team to approve. Each Swarm has a coordinator that creates a plan, breaks it into tasks, and delegates them to agents.
 
-- **What They Are**: Collaborative networks of agents making collective decisions or actions.
+Powered by the **Warp Protocol**, Swarms can interact with _any_ smart contract or application in the MultiversX ecosystem.
 
-- **How They Work**: Swarms leverage PeerMe’s secure MultiSig and DAO features for consensus-driven tasks.
+---
 
-- **Use Case**: A Swarm could manage a community treasury, with agents voting to approve expenditures like “Fund this project with 100 EGLD.”
+## Core Features
 
-- **Impact**: Enables decentralized governance and teamwork, extending JoAi’s reach to complex, group-oriented goals.
+- 🤖 **Create Agents**: Each agent has its own MultiversX wallet.
+- 🧠 **Train Agents**: Agents use semantic search (RAG) for on-demand knowledge retrieval.
+- 👥 **Create Swarms**: Collaborative agent networks making on-chain decisions via MultiSig/DAO.
+- ⚡ **Universal On-chain Actions**: Agents and Swarms use Warps to interact with ecosystem smart contracts.
+- 🔑 **On-chain Roles & Permissions**: Agents propose actions for approval unless granted specific permissions.
+- 🤝 **PeerMe Integration**: Agents evaluate and sign PeerMe proposals in real-time.
+- 📊 **Portfolio Overview**: View agent and Swarm-owned assets in the dApp.
 
-## Cortex: The core intelligence of JoAi based on Eliza
+---
 
-Cortex powers JoAi agents’ core intelligence, enabling Warp creation and use, collecting user data via natural conversation, and managing task orchestration and delegation for Swarms.
+## Components
 
-## Client / Frontend
+### Cortex: Core Intelligence
 
-Contains the UI components to interact with cortext (and other services). It is written in React and uses MultiversX SDKs.
+Based on Eliza, Cortex drives agent intelligence, enabling Warp creation, natural language data collection, and Swarm task orchestration.
 
-## Demo AdMarket Contract written in Swift
+### Client / Frontend
 
-A demo smart contract was created using the new MultiversX Swift smart contract framework. The agents use it in the demo to showcase an automatic on-chain proposal to purchase ad space for advertising purposes.
+Built with React (Next.js) and MultiversX SDKs, offering an intuitive UI to interact with Cortex and other services.
 
-A Warp (`warps/admarket-purchase.json`) is used to interat with the demo smart contract: [View on Devnet Explorer](https://devnet-explorer.multiversx.com/transactions/042af9d31f7882fa6cf0ff75a84a082d6f1676a12268e6bb39ca270b87ae0990)
+### Demo Smart Contract: AdMarket
 
-## Entity v2: A new version of PeerMe Protocol that comes with advanced roles & permission system (in development)
+A demo contract written in MultiversX Swift, showcasing an on-chain proposal for ad space purchases.
+**Warp Example**: [AdMarket Purchase Warp](https://devnet-explorer.multiversx.com/transactions/042af9d31f7882fa6cf0ff75a84a082d6f1676a12268e6bb39ca270b87ae0990)
 
-The roles and permission system was improved to enable better management of agents within Swarms and hand out dedicated permissions through roles, permissions and dedicated policies.
+### Smart Contract: Entity v2 (In Development)
 
-## How to use
+An upgraded PeerMe Protocol with an advanced roles & permissions system for better agent and Swarm management.
 
-JoAi is currently in private development and will be released soon. A devnet version is avaiable, however, whitelisting you account is required. Please get in touch for whitelisting, then follow:
+---
 
-1. Create at least 2 agents using the "Create Agent" button
-2. Create a Swarm and follow the process (this process is not fully optimized, if you experience issues, please wait a minute and refresh the page)
-3. Add your two agents to the swarm
-4. Enter the group chat of your swarm and give them a task. State that you would like them to propose it to the Swarm. (Note: we currently have limited Warps active on devnet; not all smart contract interactions will be possible)
-5. After the agents proposed and signed, your signature is required in order to execute the action
-6. You can always also navigate to PeerMe to manage your Swarm and propose actions to your agents
+## How to Use
+
+JoAi is in private development with a Devnet version available (whitelisting required). Contact [michavie on Telegram](https://t.me/michavie) for access, then follow these steps:
+
+1. Click **"Create Agent"** to generate at least 2 agents.
+2. Create a Swarm (note: process optimization in progress; refresh if issues occur).
+3. Add your agents to the Swarm.
+4. Enter the Swarm’s group chat, assign a task, and request a proposal.
+   _Limited Warps are active on Devnet; not all interactions are supported yet._
+5. Review and sign the proposal to execute the action.
+6. Manage your Swarm and propose actions via PeerMe.
+
+---
+
+## Roadmap
+
+- **Q2**
+
+  - Payments
+  - User contacts
+  - Warp Core Intelligence
+  - Progressive user onboarding
+
+- **Q3**
+
+  - Agent Swarms
+  - Recurring tasks
+  - Agent Goals
+  - AI Warp Creation
+  - Mobile App
+  - Product Hunt Launch
+
+- **Q4**
+  - Further integrations
+  - AI smart contract auditing/recommendations
+  - Desktop app and more
+
+---
+
+_Built for the MultiversX AI Hackathon 2025 by [michavie](https://github.com/michavie). Contributions welcome!_
